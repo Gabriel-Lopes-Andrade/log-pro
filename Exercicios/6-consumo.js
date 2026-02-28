@@ -1,9 +1,9 @@
 // --- Calculadora de Consumo de Combustível ---
 
 const precos = {
-  gasolina: 5.8,
+  gasolina: 2.8,
   alcool: 3.9,
-  diesel: 6.20,
+  diesel: 6.20,//Correção do preço do diesel, Kkkkkkkkk string
 };
 
 function calcularGasto(distancia, consumoKml, tipoCombustivel) {
@@ -17,7 +17,47 @@ function calcularGasto(distancia, consumoKml, tipoCombustivel) {
 
 const viagem = {
   destino: "Litoral",
-  distancia: 200, //Correção do valor da distância, substituindo a string por um número
+  distancia: 200, //Correção do valor da distância, string p número
+  veiculo: "Corsa",
+};
+
+
+const resultadoGasolina = calcularGasto(viagem.distancia, 10, precos.gasolina);
+
+console.log("Viagem para: " + viagem.destino);
+console.log("Custo estimado no Diesel: R$ " + calcularGasto(200, 15, precos.diesel));
+console.log("Custo estimado na Gasolina: R$ " + resultadoGasolina);
+
+let mensagem = ""; //Correção da variável mensagem
+if (precos.alcool < 4) {
+  mensagem = "O álcool está compensando!";
+}
+
+
+console.log(mensagem);
+
+/* Código OG
+
+// --- Calculadora de Consumo de Combustível ---
+
+const precos = {
+  gasolina: 5.8,
+  alcool: 3.9,
+  diesel: "6.20",
+};
+
+function calcularGasto(distancia, consumoKml, tipoCombustivel) {
+  let precoUnitario = tipoCombustivel;
+
+  let litrosNecessarios = distancia / consumoKml;
+  let custoTotal = litrosNecessarios * precoUnitario;
+
+  return custoTotal;
+}
+
+const viagem = {
+  destino: "Litoral",
+  distancia: "200",
   veiculo: "Corsa",
 };
 
@@ -32,3 +72,4 @@ if (precos.alcool < 4) {
 }
 
 console.log(mensagem);
+*/
