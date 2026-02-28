@@ -6,18 +6,18 @@ const nota1 = 8;
 const nota2 = 5;
 
 function calcularMedia() {
-  return (nota1 + nota2) / 2;
+  return (nota1 + nota2) / 2; // Adicionando retorno
 }
 
-const media = calcularMedia();
+const media = calcularMedia();//Criando váriavel Média
 
 if (media >= 7) {
   sta = "Aprovado";
 } else {
-  sta = "Reprovado";
+  sta = "Reprovado"; //corrigindo o const status por sta
 }
 
-console.log(`O aluno ${nomeAluno} está: ${sta}`);
+console.log(`O aluno ${nomeAluno} está: ${sta}`); //Uso crase
 
 
 /*Código OG:
