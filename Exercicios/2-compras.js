@@ -10,7 +10,7 @@ const produto = {
 
 // Desconto em porcentagem
 function aplicarDesconto(valor) {
-  // O desconto de 20% é aplicado através do decimal de 0.20 ,ultiplicado ao valor
+  // O desconto de 20% é aplicado através do  0.20 
   return valor - (valor * 0.20);
 }
 
