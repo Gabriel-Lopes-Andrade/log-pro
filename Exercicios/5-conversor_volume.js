@@ -37,6 +37,8 @@ if (producaoDia.lote1 ==0 || producaoDia.lote2 == 0) {
 
 
 /*
+Código OG:
+
 const mlPorLitro = "1000";
 
 function converterMlParaLitro(quantidadeMl) {
